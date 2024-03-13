@@ -9,7 +9,7 @@ const Main = () => {
   }, []);
   return (
     <>
-    <section   className="flex flex-wrap gap-6 mt-10 bg-[#F4BBC9] pt-5 pb-10 justify-center items-center">
+    <section   className="flex flex-wrap gap-8 md:gap-6 mt-10 bg-[#F4BBC9] pt-5 pb-10 justify-center items-center">
      
      <div className="relative" data-aos="fade-up"
           data-aos-duration="2000">

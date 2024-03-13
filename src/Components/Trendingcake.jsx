@@ -16,7 +16,7 @@ const Trendingcake = () => {
 
     
     <div className="relative" data-aos="fade-up" data-aos-duration="2000">
-    <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-2 rounded-tr-md rounded-bl-md">
+    <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-5 md:px-2 rounded-tr-md rounded-bl-md">
     <p className="text-base font-bold">15% OFF</p>
     </div>
     <img className="flex flex-wrap w-full h-full md:w-[420px] md:h-[420px] rounded-2xl"src="https://i.pinimg.com/564x/f1/bb/77/f1bb77eaff06699ca2405dbf352682ea.jpg" alt="" srcset="" />
@@ -34,7 +34,7 @@ const Trendingcake = () => {
     
     
     <div className="relative" data-aos="fade-up" data-aos-duration="2000">
-  <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-2 rounded-tr-md rounded-bl-md">
+  <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-5 md:px-2 rounded-tr-md rounded-bl-md">
     <p className="text-base font-bold">15% OFF</p>
     </div>
     <img className="flex flex-wrap w-full h-full md:w-[420px] md:h-[420px] rounded-2xl" src="https://i.pinimg.com/564x/77/20/82/772082e37096730f5c3a6f50ecc97bce.jpg" alt="" srcset="" />
@@ -43,7 +43,7 @@ const Trendingcake = () => {
 
 
     <div className="relative" data-aos="fade-up" data-aos-duration="2000">
-  <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-2 rounded-tr-md rounded-bl-md">
+  <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-5 md:px-2 rounded-tr-md rounded-bl-md">
     <p className="text-base font-bold">15% OFF</p>
   </div>
     <img className="flex flex-wrap w-full h-full md:w-[420px] md:h-[420px] rounded-2xl" src="https://i.pinimg.com/564x/df/2a/f8/df2af821400f1a34c419357c4f6ddcf0.jpg" alt="" srcset="" />
@@ -51,7 +51,7 @@ const Trendingcake = () => {
     </div>
 
     <div className="relative" data-aos="fade-up" data-aos-duration="2000">
-    <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-2 rounded-tr-md rounded-bl-md">
+    <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-5 md:px-2 rounded-tr-md rounded-bl-md">
     <p className="text-base font-bold">15% OFF</p>
   </div>
     <img className="flex flex-wrap w-full h-full md:w-[420px] md:h-[420px] rounded-2xl" src="https://i.pinimg.com/564x/33/c9/f7/33c9f7ecb35642043318a7c80c58c489.jpg" alt="" srcset="" />
@@ -59,7 +59,7 @@ const Trendingcake = () => {
     </div>
 
     <div className="relative" data-aos="fade-up" data-aos-duration="2000">
-    <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-2 rounded-tr-md rounded-bl-md">
+    <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-5 md:px-2 rounded-tr-md rounded-bl-md">
     <p className="text-base font-bold">15% OFF</p>
     </div>
     <img className="flex flex-wrap w-full h-full md:w-[420px] md:h-[420px] rounded-2xl" src="https://i.pinimg.com/564x/18/9a/b3/189ab398da994ec09486a667ddde1f09.jpg" alt="" srcset="" />

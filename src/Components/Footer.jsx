@@ -3,7 +3,7 @@ import React from 'react'
 export default function App() {
     return (
       <footer
-        className="bg-[#F4BBC9] text-center text-[#733D26] dark:bg-neutral-600 dark:text-neutral-200 mt-12 lg:text-left">
+        className="bg-[#F4BBC9] text-center text-[#733D26] dark:bg-[#F4BBC9] dark:text-[#733D26] mt-12 lg:text-left">
         <div
           className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
           <div className="mr-12 hidden lg:block">
