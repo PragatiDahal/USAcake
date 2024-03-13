@@ -10,38 +10,30 @@ const Review = () => {
   return (
     <>
       <div
-        data-aos="zoom-in"
-        data-aos-duration="2000"
-        className="flex flex-col md:flex-row flex-wrap w-[1200px] h-[200px] bg-[#F4BBC9] rounded-3xl mx-auto mt-12 mb-10 justify-center items-center"
-      >
-        <div className="flex flex-wrap justify-center items-center">
-          <svg
-            height="60px"
-            width="60px"
-            fill="#733D26"
-            viewBox="0 0 1000 1000"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path d="M790 166h-41V83h-84v83H333V83h-83v83h-42q-34 0-58.5 24.5T125 250v582q0 34 24 58.5t59 24.5h582q35 0 59-24.5t24-58.5V250q0-35-24.5-59.5T790 166zm0 666H208V374h582v458zM291 457h208v208H291V457z"></path>
-            </g>
-          </svg>
-          <p className="text-xl text-[#733D26] font-bold px-12 font-poppins">
-            Preferred Time <br /> Slot Selection
-          </p>
-        </div>
+  data-aos="zoom-in"
+  data-aos-duration="2000"
+  className="flex flex-col md:flex-row w-full md:max-w-[1200px] bg-[#F4BBC9] rounded-3xl mx-auto mt-12 mb-10 justify-center items-center"
+>
+  <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4">
+    <svg
+      height="50px"
+      width="50px"
+      fill="#733D26"
+      viewBox="0 0 1000 1000"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M790 166h-41V83h-84v83H333V83h-83v83h-42q-34 0-58.5 24.5T125 250v582q0 34 24 58.5t59 24.5h582q35 0 59-24.5t24-58.5V250q0-35-24.5-59.5T790 166zm0 666H208V374h582v458zM291 457h208v208H291V457z"></path>
+    </svg>
+    <p className="text-xl text-[#733D26] font-bold px-4 font-poppins text-center">
+      Preferred Time <br /> Slot Selection
+    </p>
+  </div>
 
-        <div className="flex flex-wrap justify-center items-center">
+  <div className="flex flex-wrap justify-center items-center">
           <svg
             fill="#733D26"
-            height="60px"
-            width="60px"
+            height="50px"
+            width="50px"
             version="1.1"
             id="Icons"
             xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +67,8 @@ const Review = () => {
             xmlns="http://www.w3.org/2000/svg"
             enable-background="new 0 0 122.88 102.36"
             viewBox="0 0 122.88 102.36"
-            width="60px"
-            height="60px"
+            width="50px"
+            height="50px"
           >
             <path
               fill-rule="evenodd"
@@ -94,8 +86,8 @@ const Review = () => {
         <div className="flex flex-wrap justify-center items-center">
           <svg
             version="1.0"
-            height="60px"
-            weight="60px"
+            height="50px"
+            weight="50px"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -131,7 +123,9 @@ const Review = () => {
             Serviced Till Date
           </p>
         </div>
-      </div>
+
+</div>
+
     </>
   );
 };
