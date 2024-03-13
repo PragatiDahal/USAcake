@@ -12,7 +12,7 @@ const Review = () => {
       <div
   data-aos="zoom-in"
   data-aos-duration="2000"
-  className="flex flex-col md:flex-row w-full md:max-w-[1200px] bg-[#F4BBC9] rounded-3xl mx-auto mt-12 mb-10 justify-center items-center"
+  className="flex flex-col md:flex-row w-full md:max-w-[1200px]  bg-[#F4BBC9] rounded-3xl mx-auto mt-12 mb-10 justify-center items-center"
 >
   <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4">
     <svg
@@ -25,7 +25,7 @@ const Review = () => {
       <path d="M790 166h-41V83h-84v83H333V83h-83v83h-42q-34 0-58.5 24.5T125 250v582q0 34 24 58.5t59 24.5h582q35 0 59-24.5t24-58.5V250q0-35-24.5-59.5T790 166zm0 666H208V374h582v458zM291 457h208v208H291V457z"></path>
     </svg>
     <p className="text-xl text-[#733D26] font-bold px-4 font-poppins text-center">
-      Preferred Time <br /> Slot Selection
+      Preferred Time <br />Slot Selection
     </p>
   </div>
 
