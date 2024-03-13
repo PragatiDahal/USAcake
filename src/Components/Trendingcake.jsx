@@ -82,7 +82,7 @@ const Trendingcake = () => {
 
 </section>
 
-<div className="flex justify-center pt-5">
+<div className="flex justify-center pt-5 mb-10">
   <button data-aos="fade-up" data-aos-duration="2000" className="w-[200px] h-[45px] bg-[#733D26] hover:bg-red-300 text-base font-bold text-white rounded-xl">
     View all
   </button>

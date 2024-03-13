@@ -12,7 +12,7 @@ const Review = () => {
       <div
   data-aos="zoom-in"
   data-aos-duration="2000"
-  className="flex flex-col md:flex-row w-full md:max-w-[1200px]  bg-[#F4BBC9] rounded-3xl mx-auto mt-12 mb-10 justify-center items-center"
+  className="flex flex-col md:flex-row w-full md:max-w-[1200px] h-[150px] bg-[#F4BBC9] rounded-3xl mx-auto mt-12 mb-10 justify-center items-center"
 >
   <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4">
     <svg

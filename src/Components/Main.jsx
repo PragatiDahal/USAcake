@@ -9,7 +9,7 @@ const Main = () => {
   }, []);
   return (
     <>
-   <section className="flex flex-wrap gap-8 md:gap-6 mt-10 bg-[#F4BBC9] pt-5 pb-10 justify-center items-center">
+   <section className="flex flex-wrap gap-8 md:gap-8 mt-10 bg-[#F4BBC9] pt-5 pb-10 justify-center items-center">
 
 <div className="relative" data-aos="fade-up" data-aos-duration="2000">
   <img className="w-full h-full md:w-[420px] md:h-[420px] rounded-2xl transition ease-in-out delay-150 hover:scale-90 duration-1000" src="https://images.unsplash.com/photo-1503525642560-ecca5e2e49e9?q=80&w=2035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
