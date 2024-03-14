@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/USAlogo.png";
+import logo from "../images/USAlogo1.png";
 import { Link } from "react-router-dom";
 
 
@@ -65,7 +65,7 @@ const Navbar = () => {
 
 
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 right-2 rounded-md w-full bg-red-600 pl-10 py-5 shadow-lg z-50">
+          <div className="md:hidden absolute top-16 right-2 rounded-md w-full bg-red-400 pl-10 py-5 shadow-lg z-50">
             <Link to="/" className="block text-white mb-2 hover:bg-red-200 rounded-md">
               Home
             </Link>
