@@ -41,7 +41,7 @@ const Navbar = () => {
           </li>
           </div>
 
-          <div className="pt-2 md:hidden">
+          <div className="pt-5 md:hidden">
           <button
             className="text-[#733D26] focus:outline-none"
             onClick={toggleMenu}
@@ -87,7 +87,7 @@ const Navbar = () => {
           </div>
         )}
 
-        <div className="hidden md:flex items-center pt-5 ">
+        <div className="hidden md:flex items-center pt-2 ">
           <a className="mr-6 text-[#733D26] dark:text-neutral-200">
             <svg
               height="30px"

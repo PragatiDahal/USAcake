@@ -29,7 +29,7 @@ const Review = () => {
     </p>
   </div>
 
-  <div className="flex flex-wrap justify-center items-center">
+  <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4">
           <svg
             fill="#733D26"
             height="50px"
@@ -62,7 +62,7 @@ const Review = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center">
+        <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             enable-background="new 0 0 122.88 102.36"
@@ -83,7 +83,7 @@ const Review = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center">
+        <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4">
           <svg
             version="1.0"
             height="50px"
