@@ -1,9 +1,7 @@
 import React from "react";
 import logo from "../images/USAlogo1.png";
-import { Link } from "react-router-dom";
-
-
-import { useState } from 'react';;
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -11,84 +9,126 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   }
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  }
+
   return (
     <>
-      
-      <nav className="flex justify-between  bg-[#F4BBC9] px-10 h-16  text-white sticky top-0 z-20 font-poppins">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="title size-10 m-4 font-bold">
-          <img
-            className="w-[60px] h-[50px] left-[115px] top-[5px] absolute"
-            src={logo}
-            alt="Logo"
-          />
-        </Link>
-        <div className="w-[120px] h-[84px] left-[215px] top-[5px] absolute text-[#733D26] text-xl font-bold font-poppins">
-          USA
-          <br />
-          CAKES
-        </div>
+      <nav className="flex justify-between bg-[#F4BBC9] px-10 h-16 text-white sticky top-0 z-20 font-poppins">
+        <div className="container mx-auto flex justify-between items-center">
+          <Link to="/" className="title size-10 m-4 font-bold">
+            <img
+              className="w-[60px] h-[50px] left-[115px] top-[5px] absolute"
+              src={logo}
+              alt="Logo"
+            />
+          </Link>
+          <div className="w-[120px] h-[84px] left-[215px] top-[5px] absolute text-[#733D26] text-xl font-bold font-poppins">
+            USA
+            <br />
+            CAKES
+          </div>
 
-          <div className="hidden md:flex space-x-2 left-[500px]">
-          
-          <Link to="/Homepage" className="list-none w-[71px] h-[29px] left-[389px] top-[25px] absolute text-[#733D26] text-xl font-bold font-poppins">
-            Home
-          </Link>
-          <Link to="/Cakes" className="list-none w-[71px] h-[29px] left-[537px] top-[25px] absolute text-[#733D26] text-xl font-bold font-poppins">
-            Cakes
-          </Link>
-          <li className="list-none w-[124px] h-[29px] left-[737px] top-[25px] absolute text-yellow-900 text-xl font-bold font-poppins">
-            Occasions
-          </li>
+          <div className="hidden md:flex space-x-2">
+            <Link
+              to="/Homepage"
+              className="list-none w-[71px] h-[29px] left-[389px] top-[25px] absolute text-[#733D26] text-xl font-bold font-poppins"
+              onClick={closeMenu}
+            >
+              Home
+            </Link>
+            <Link
+              to="/Cakes"
+              className="list-none w-[71px] h-[29px] left-[537px] top-[25px] absolute text-[#733D26] text-xl font-bold font-poppins"
+              onClick={closeMenu}
+            >
+              Cakes
+            </Link>
+            <li
+              className="list-none w-[124px] h-[29px] left-[737px] top-[25px] absolute text-yellow-900 text-xl font-bold font-poppins"
+              onClick={closeMenu}
+            >
+              Occasions
+            </li>
           </div>
 
           <div className="pt-5 md:hidden">
-          <button
-            className="text-[#733D26] focus:outline-none"
-            onClick={toggleMenu}
-          >
-          <svg
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              className="text-[#733D26] focus:outline-none"
+              onClick={toggleMenu}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-        </div>
-
-
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-16 right-2 rounded-md w-full bg-red-400 pl-10 py-5 shadow-lg z-50">
-            <Link to="/" className="block text-white mb-2 hover:bg-red-200 rounded-md">
-              Home
-            </Link>
-            <Link to="/Cakes" className="block text-white hover:bg-red-200 mb-2">
-              Cakes
-            </Link>
-            <Link to="/" className="block text-white hover:bg-red-200 mb-2">
-              Occasions
-            </Link>
-            <Link to="/About" className="block text-white hover:bg-red-200 mb-2">
-              About
-            </Link>
-            <Link to="/" className="block text-white hover:bg-red-200 mb-2">
-              Cart
-            </Link>
-            <Link to="/" className="block text-white hover:bg-red-200 mb-2">
-              Login
-            </Link>
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
           </div>
-        )}
 
-        <div className="hidden md:flex items-center pt-2 ">
+          {isMenuOpen && (
+            <div className="md:hidden absolute top-16 right-2 rounded-md w-full bg-red-400 pl-10 py-5 shadow-lg z-50">
+              <Link
+                to="/"
+                className="block text-white mb-2 hover:bg-red-200 rounded-md"
+                onClick={closeMenu}
+              >
+                Home
+              </Link>
+
+              <Link
+                to="/Cakes"
+                className="block text-white hover:bg-red-200 mb-2"
+                onClick={closeMenu}
+              >
+                Cakes
+              </Link>
+
+              <Link
+                to="/"
+                className="block text-white hover:bg-red-200 mb-2"
+                onClick={closeMenu}
+              >
+                Occasions
+              </Link>
+
+              <Link
+                to="/About"
+                className="block text-white hover:bg-red-200 mb-2"
+                onClick={closeMenu}
+              >
+                About
+              </Link>
+
+              <Link
+                to="/"
+                className="block text-white hover:bg-red-200 mb-2"
+                onClick={closeMenu}
+              >
+                Cart
+              </Link>
+
+              <Link
+                to="/"
+                className="block text-white hover:bg-red-200 mb-2"
+                onClick={closeMenu}
+              >
+                Login
+              </Link>
+            </div>
+          )}
+
+<div className="hidden md:flex items-center pt-2 ">
           <a className="mr-6 text-[#733D26] dark:text-neutral-200">
             <svg
               height="30px"
