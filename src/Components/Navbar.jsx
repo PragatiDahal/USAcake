@@ -2,7 +2,15 @@ import React from "react";
 import logo from "../images/USAlogo.png";
 import { Link } from "react-router-dom";
 
+// Removed duplicate React import
+import { useState } from 'react';;
+
 const Navbar = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  }
   return (
     <>
       <div className="bg-slate-1000"></div>
@@ -33,11 +41,57 @@ const Navbar = () => {
           </li>
           </div>
 
-        <div className="flex items-center pt-2 ">
+          <div className="md:hidden">
+          <button
+            className="text-white focus:outline-none"
+            onClick={toggleMenu}
+          >
+          <svg
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+
+        {isMenuOpen && (
+          <div className="md:hidden absolute top-16 right-2 rounded-md w-full  bg-[#733D26] pl-10 py-5 shadow-lg z-50">
+            <Link to="/" className="block text-white mb-2 hover:bg-red-800 rounded-md">
+              Home
+            </Link>
+            <Link to="/Cakes" className="block text-white mb-2">
+              Cakes
+            </Link>
+            <Link to="/" className="block text-white mb-2">
+              Occasions
+            </Link>
+            <Link to="/About" className="block text-white mb-2">
+              About
+            </Link>
+            <Link to="/" className="block text-white mb-2">
+              Cart
+            </Link>
+            <Link to="/" className="block text-white mb-2">
+              Login
+            </Link>
+          </div>
+        )}
+
+        <div className="hidden md:flex items-center pt-2 ">
           <a className="mr-6 text-[#733D26] dark:text-neutral-200">
             <svg
-              height="35px"
-              width="35px"
+              height="30px"
+              width="30px"
               version="1.1"
               id="_x32_"
               xmlns="http://www.w3.org/2000/svg"
@@ -73,11 +127,12 @@ const Navbar = () => {
                 </g>{" "}
               </g>
             </svg>
+          <p className="text-[#733D26] text-base font-bold font-poppins">CART</p>
           </a>
 
           <a className="mr-6 text-[#733D26] dark:text-neutral-200">
             <svg
-              className="w-8 h-8 top-[5px]"
+              className="w-[30px] h-[30px] top-[5px]"
               fill="#733D26"
               viewBox="0 0 36 36"
               version="1.1"
@@ -114,6 +169,7 @@ const Navbar = () => {
                 ></rect>{" "}
               </g>
             </svg>
+            <p className="text-[#733D26] text-base font-bold font-poppins">LOGIN</p>
           </a>
 
         </div>
