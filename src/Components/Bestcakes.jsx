@@ -2,7 +2,7 @@ import React from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-
+import {Link} from "react-router-dom"
 const Bestcakes = () => {
   useEffect(() => {
     AOS.init();
@@ -98,9 +98,11 @@ const Bestcakes = () => {
   </div>
   </div>
 <div className="mt-4">
+  <Link to="/Cakes">
   <button data-aos="fade-up" data-aos-duration="2000" className="w-[150px] h-[45px] left-[500px] bg-[#F4BBC9] hover:bg-red-500 text-base font-bold text-[#733D26] mx-auto rounded-xl block ">
      View all
     </button>
+    </Link>
     </div>
 </>
   )

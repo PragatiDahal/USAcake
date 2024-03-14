@@ -2,6 +2,7 @@ import React from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import {Link} from "react-router-dom"
 
 const Trendingcake = () => {
   useEffect(() => {
@@ -83,9 +84,11 @@ const Trendingcake = () => {
 </section>
 
 <div className="flex justify-center pt-5 mb-10">
+  <Link to="/Cakes">
   <button data-aos="fade-up" data-aos-duration="2000" className="w-[200px] h-[45px] bg-[#733D26] hover:bg-red-300 text-base font-bold text-white rounded-xl">
     View all
   </button>
+  </Link>
 </div>
 
       </>

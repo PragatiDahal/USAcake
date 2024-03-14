@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 export default function App() {
     return (
       <footer
@@ -122,12 +122,13 @@ export default function App() {
                 Quick links
               </h6>
               <p className="mb-4">
-                <a href='/home' className="text-[#733D26] dark:text-[#733D26]"
+                <a href='/' className="text-[#733D26] dark:text-[#733D26]"
                 >Home</a>
               </p>
               <p className="mb-4">
-                <a href='/about' className="text-[#733D26] dark:text-[#733D26]"
-                >About</a>
+                <Link to='/About' className="text-[#733D26] dark:text-[#733D26]"
+                >About
+                </Link>
               </p>
               <p className="mb-4">
                 <a href='service' className="text-[#733D26] dark:text-[#733D26]"

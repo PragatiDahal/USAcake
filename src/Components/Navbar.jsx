@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/USAlogo.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,14 +20,18 @@ const Navbar = () => {
           CAKES
         </div>
 
-        <ul>
-          <li className="list-none w-[71px] h-[29px] left-[389px] top-[25px] absolute text-[#733D26] text-xl font-bold font-poppins">
+          <div className="hidden md:flex space-x-4">
+          
+          <Link to="/Homepage" className="list-none w-[71px] h-[29px] left-[389px] top-[25px] absolute text-[#733D26] text-xl font-bold font-poppins">
+            Home
+          </Link>
+          <Link to="/Cakes" className="list-none w-[71px] h-[29px] left-[537px] top-[25px] absolute text-[#733D26] text-xl font-bold font-poppins">
             Cakes
-          </li>
-          <li className="list-none w-[124px] h-[29px] left-[537px] top-[25px] absolute text-yellow-900 text-xl font-bold font-poppins">
+          </Link>
+          <li className="list-none w-[124px] h-[29px] left-[737px] top-[25px] absolute text-yellow-900 text-xl font-bold font-poppins">
             Occasions
           </li>
-        </ul>
+          </div>
 
         <div className="flex items-center pt-2 ">
           <a className="mr-6 text-[#733D26] dark:text-neutral-200">
