@@ -10,6 +10,7 @@ const Timeline = () => {
   }, []);
   return (
     <>
+
       <div className="flex justify-center py-8 pt-10">
         <h1
           data-aos="zoom-in"
@@ -23,67 +24,62 @@ const Timeline = () => {
       <div
         data-aos="fade-up"
         data-aos-duration="2000"
-        className="w-full max-w-[1440px] h-auto relative bg-white mx-auto"
+        className="justify-start md:justify-center w-[1440px] h-[837px] relative bg-white overflow-y-hidden overflow-x-hidden"
       >
-        <div className="w-1/50 h-full absolute bg-red-200 bg-opacity-60 left-[10%]" />
-        <div className="w-1/4 h-0.25rem absolute bg-red-200 bg-opacity-60 left-[30%] top-[10%]" />
-        <div className="w-1/4 h-0.25rem absolute bg-red-200 bg-opacity-60 left-[55%] top-[25%]" />
-        <div className="w-1/4 h-0.25rem absolute bg-red-200 bg-opacity-60 left-[30%] top-[40%]" />
-        <div className="w-1/4 h-0.25rem absolute bg-red-200 bg-opacity-60 left-[30%] top-[80%]" />
-        <div className="w-1/4 h-0.25rem absolute bg-red-200 bg-opacity-60 left-[55%] top-[60%]" />
+        <div className="w-[7px] h-[705px] left-[688px] top-[9px] absolute bg-red-200 bg-opacity-60" />
+        <div className="w-[268px] h-2 left-[423px] top-[83px] absolute bg-red-200 bg-opacity-60" />
+        <div className="w-[268px] h-2 left-[695px] top-[208px] absolute bg-red-200 bg-opacity-60" />
+        <div className="w-[268px] h-2 left-[427px] top-[317px] absolute bg-red-200 bg-opacity-60" />
+        <div className="w-[268px] h-2 left-[423px] top-[638px] absolute bg-red-200 bg-opacity-60" />
+        <div className="w-[268px] h-2 left-[691px] top-[505px] absolute bg-red-200 bg-opacity-60" />
         <img
-          className="w-20 h-20 absolute rounded-full left-[20%] top-[3%]"
+          className="w-[126px] h-[126px] left-[297px] top-[28px] absolute rounded-full"
           src={logo}
-          alt="Logo"
         />
         <img
-          className="w-20 h-20 absolute rounded-full left-[20%] top-[25%]"
+          className="w-[126px] h-[126px] left-[301px] top-[254px] absolute rounded-full"
           src={logo}
-          alt="Logo"
         />
         <img
-          className="w-20 h-20 absolute rounded-full left-[20%] top-[65%]"
+          className="w-[126px] h-[126px] left-[297px] top-[575px] absolute rounded-full"
           src={logo}
-          alt="Logo"
         />
         <img
-          className="w-20 h-20 absolute rounded-full left-[70%] top-[15%]"
+          className="w-[126px] h-[126px] left-[929px] top-[148px] absolute rounded-full"
           src={logo}
-          alt="Logo"
         />
         <img
-          className="w-20 h-20 absolute rounded-full left-[70%] top-[45%]"
+          className="w-[126px] h-[126px] left-[937px] top-[423px] absolute rounded-full"
           src={logo}
-          alt="Logo"
         />
-        <div className="absolute text-yellow-900 font-semibold font-poppins left-[35%] top-[1%]">
+        <div className="w-[73px] h-[34px] left-[494px] top-[37px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           2015
         </div>
-        <div className="absolute text-yellow-900 font-semibold font-poppins left-[60%] top-[15%]">
+        <div className="w-[73px] h-[34px] left-[743px] top-[165px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           2017
         </div>
-        <div className="absolute text-yellow-900 font-semibold font-poppins left-[35%] top-[30%]">
+        <div className="w-[73px] h-[34px] left-[494px] top-[274px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           2019
         </div>
-        <div className="absolute text-yellow-900 font-semibold font-poppins left-[35%] top-[70%]">
+        <div className="w-[95px] h-[34px] left-[494px] top-[585px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           Today
         </div>
-        <div className="absolute text-yellow-900 font-semibold font-poppins left-[60%] top-[50%]">
+        <div className="w-[73px] h-[34px] left-[750px] top-[439px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           2021
         </div>
-        <div className="absolute text-yellow-900 font-semibold font-poppins left-[35%] top-[10%]">
+        <div className="w-[185px] h-[37px] left-[438px] top-[111px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           USA cake shop
         </div>
-        <div className="absolute text-yellow-900 font-semibold font-poppins left-[65%] top-[20%]">
+        <div className="w-[185px] h-[37px] left-[710px] top-[231px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           2nd location
         </div>
-        <div className="absolute text-yellow-900 font-semibold font-poppins left-[63%] top-[55%]">
+        <div className="w-[227px] h-[72px] left-[702px] top-[513px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           Best cake shop of Butwal.
         </div>
-        <div className="absolute text-yellow-900 font-semibold font-poppins left-[35%] top-[80%]">
+        <div className="w-[272px] h-36 left-[423px] top-[662px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           Most popular and renowned cake shop with best customer services.
         </div>
-        <div className="absolute text-yellow-900 font-semibold font-poppins left-[40%] top-[40%]">
+        <div className="w-[185px] h-[37px] left-[452px] top-[350px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           3rd location
         </div>
       </div>

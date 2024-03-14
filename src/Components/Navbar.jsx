@@ -17,7 +17,7 @@ const Navbar = () => {
       <nav className="flex justify-between  bg-[#F4BBC9] px-10 h-16  text-white sticky top-0 z-20 font-poppins">
         <Link to="/" className="title size-10 m-4 font-bold">
           <img
-            className="w-[55px] h-[45px] left-[115px] top-[5px] absolute"
+            className="w-[60px] h-[50px] left-[115px] top-[5px] absolute"
             src={logo}
             alt="Logo"
           />
