@@ -65,29 +65,29 @@ const Navbar = () => {
 
 
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 right-2 rounded-md w-full  bg-[#F4BBC9] pl-10 py-5 shadow-lg z-50">
-            <Link to="/" className="block text-white mb-2 hover:bg-red-800 rounded-md">
+          <div className="md:hidden absolute top-16 right-2 rounded-md w-full bg-red-600 pl-10 py-5 shadow-lg z-50">
+            <Link to="/" className="block text-white mb-2 hover:bg-red-200 rounded-md">
               Home
             </Link>
-            <Link to="/Cakes" className="block text-white mb-2">
+            <Link to="/Cakes" className="block text-white hover:bg-red-200 mb-2">
               Cakes
             </Link>
-            <Link to="/" className="block text-white mb-2">
+            <Link to="/" className="block text-white hover:bg-red-200 mb-2">
               Occasions
             </Link>
-            <Link to="/About" className="block text-white mb-2">
+            <Link to="/About" className="block text-white hover:bg-red-200 mb-2">
               About
             </Link>
-            <Link to="/" className="block text-white mb-2">
+            <Link to="/" className="block text-white hover:bg-red-200 mb-2">
               Cart
             </Link>
-            <Link to="/" className="block text-white mb-2">
+            <Link to="/" className="block text-white hover:bg-red-200 mb-2">
               Login
             </Link>
           </div>
         )}
 
-        <div className="hidden md:flex items-center pt-2 ">
+        <div className="hidden md:flex items-center pt-5 ">
           <a className="mr-6 text-[#733D26] dark:text-neutral-200">
             <svg
               height="30px"
