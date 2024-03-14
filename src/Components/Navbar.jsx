@@ -13,8 +13,9 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className="bg-slate-1000"></div>
+      
       <nav className="flex justify-between  bg-[#F4BBC9] px-10 h-16  text-white sticky top-0 z-20 font-poppins">
+      <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="title size-10 m-4 font-bold">
           <img
             className="w-[60px] h-[50px] left-[115px] top-[5px] absolute"
@@ -28,7 +29,7 @@ const Navbar = () => {
           CAKES
         </div>
 
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex space-x-2 left-[500px]">
           
           <Link to="/Homepage" className="list-none w-[71px] h-[29px] left-[389px] top-[25px] absolute text-[#733D26] text-xl font-bold font-poppins">
             Home
@@ -171,7 +172,7 @@ const Navbar = () => {
             </svg>
             <p className="text-[#733D26] text-base font-bold font-poppins">LOGIN</p>
           </a>
-
+         </div>
         </div>
       </nav>
     </>
