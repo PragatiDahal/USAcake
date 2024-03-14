@@ -20,8 +20,8 @@ const Trendingcake = () => {
     <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-5 md:px-2 rounded-tr-md rounded-bl-md">
       <p className="text-base font-bold">15% OFF</p>
     </div>
-    <img className="w-full h-full rounded-2xl" src="https://i.pinimg.com/564x/f1/bb/77/f1bb77eaff06699ca2405dbf352682ea.jpg" alt="" />
-    <p className="mt-2 px-2 text-center text-[#733D26] font-bold bg-white rounded-xl">Chocolate cake : Rs.500</p>
+    <img className="w-full h-full rounded-2xl" src="https://i.pinimg.com/564x/52/48/14/524814bcafad7dfa9c6b7ffcda4c7d0e.jpg" alt="" />
+    <p className="mt-2 px-2 text-center text-[#733D26] font-bold bg-white rounded-xl">Butterscotch cake : Rs.500</p>
   </div>
 
   <div className="relative" data-aos="fade-up" data-aos-duration="2000">
@@ -77,8 +77,8 @@ const Trendingcake = () => {
     <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-5 md:px-2 rounded-tr-md rounded-bl-md">
     <p className="text-base font-bold">15% OFF</p>
     </div>
-    <img className="flex flex-wrap w-full h-full md:w-[420px] md:h-[420px] rounded-2xl" src="https://i.pinimg.com/564x/52/48/14/524814bcafad7dfa9c6b7ffcda4c7d0e.jpg" alt="" srcset="" />
-    <p className="mt-2 px-2 text-center text-[#733D26] font-bold bg-white rounded-xl">Butterscotch cake : Rs.500</p>
+    <img className="flex flex-wrap w-full h-full md:w-[420px] md:h-[420px] rounded-2xl" src="https://i.pinimg.com/564x/f1/bb/77/f1bb77eaff06699ca2405dbf352682ea.jpg" alt="" srcset="" />
+    <p className="mt-2 px-2 text-center text-[#733D26] font-bold bg-white rounded-xl">Chocolate cake : Rs.500</p>
     </div>
 
 </section>

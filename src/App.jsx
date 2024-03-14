@@ -18,16 +18,17 @@ function App() {
       <BrowserRouter>
   <Navbar/>
   <Routes>
-    <Route path="/Homepage" element={<Homepage />} />
-    {/* <Route path="/Search" element={<Search />} />
+    <Route path="/" element={<Homepage />} />
+     <Route path="/Search" element={<Search />} />
     <Route path="/Main" element={<Main />} />
     <Route path="/Bestcakes" element={<Bestcakes />} />
     <Route path="/Trendingcake" element={<Trendingcake />} />
     <Route path="/Review" element={<Review />} />
-     {/* <Route path="/Joinus" element={<Joinus />} /> */}
+    <Route path="/Joinus" element={<Joinus />} />
      <Route path="/Timeline" element={<Timeline/>}/>
     <Route path="/Cakes" element={<Cakes />} />
     <Route path="/About" element={<About />} /> 
+    <Route path="*" element={<Navigate to='/'/>} />
   </Routes>
   <Footer/>
 </BrowserRouter>  
