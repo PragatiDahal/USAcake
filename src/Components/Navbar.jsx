@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../images/USAlogo.png";
 import { Link } from "react-router-dom";
 
-// Removed duplicate React import
+
 import { useState } from 'react';;
 
 const Navbar = () => {
@@ -41,9 +41,9 @@ const Navbar = () => {
           </li>
           </div>
 
-          <div className="md:hidden">
+          <div className="pt-2 md:hidden">
           <button
-            className="text-white focus:outline-none"
+            className="text-[#733D26] focus:outline-none"
             onClick={toggleMenu}
           >
           <svg
@@ -65,7 +65,7 @@ const Navbar = () => {
 
 
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 right-2 rounded-md w-full  bg-[#733D26] pl-10 py-5 shadow-lg z-50">
+          <div className="md:hidden absolute top-16 right-2 rounded-md w-full  bg-[#F4BBC9] pl-10 py-5 shadow-lg z-50">
             <Link to="/" className="block text-white mb-2 hover:bg-red-800 rounded-md">
               Home
             </Link>
