@@ -24,7 +24,7 @@ const Timeline = () => {
       <div
         data-aos="fade-up"
         data-aos-duration="2000"
-        className="justify-start md:justify-center w-auto h-auto md:w-[1440px] md:h-[837px] relative bg-white overflow-hidden"
+        className="justify-start md:justify-center w-[150px] h-[800px] md:w-[1440px] md:h-[837px] relative bg-white overflow-hidden"
       >
         <div className="w-[7px] h-[705px] left-[688px] top-[9px] absolute bg-red-200 bg-opacity-60" />
         <div className="w-[268px] h-2 left-[423px] top-[83px] absolute bg-red-200 bg-opacity-60" />
