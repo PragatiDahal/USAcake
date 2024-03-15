@@ -98,19 +98,19 @@ const Navbar = () => {
               Home
             </Link>
 
-            <Link to="/Cakes" className="block text-white hover:bg-red-200 mb-2" onClick={closeMenu}>
+            <Link to="/Cakes" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
               Cakes
             </Link>
 
             <div
-              className="cursor-pointer w-[124px] h-[29px] left-[737px] top-[25px] absolute text-[#733D26] text-xl font-bold font-poppins"
+              className="block text-white mb-2 hover:bg-red-200 rounded-md"
               onClick={toggleMenu}
             >
               Occasions
             </div>
             
             {isMenuOpen && (
-              <ul className="absolute left-[737px] top-[54px] bg-[#733D26] border border-[#381d12] rounded shadow-md">
+              <ul className="md:hidden absolute left-[737px] top-[54px] bg-[#733D26] border border-[#381d12] rounded shadow-md ${isMenuOpen ? '' : 'hidden'}">
                 {occasions.map((occasion) => (
                   <li
                     key={occasion}
@@ -124,15 +124,15 @@ const Navbar = () => {
               </ul>
             )}
 
-            <Link to="/About" className="block text-white hover:bg-red-200 mb-2" onClick={closeMenu}>
+            <Link to="/About" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
               About
             </Link>
 
-            <Link to="/" className="block text-white hover:bg-red-200 mb-2" onClick={closeMenu}>
+            <Link to="/" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
               Cart
             </Link>
 
-            <Link to="/" className="block text-white hover:bg-red-200 mb-2" onClick={closeMenu}>
+            <Link to="/" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
               Login
             </Link>
           </div>
