@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/USAlogo.png";
+import logo from "../images/USAlogo1.png";
 import Timeline from "./Timeline"
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,7 +22,7 @@ const About = () => {
       </div>
 
       <div
-        className="max-w-[1200px] mx-auto bg-white rounded-xl py-10 px-4 md:px-8 shadow-md overflow-hidden"
+        className="max-w-[1200px] mx-auto bg-white rounded-xl py-10 px-4 md:px-8 shadow-md overflow-hidden hover:bg-red-100"
         data-aos="fade-up"
         data-aos-duration="2000"
       >
