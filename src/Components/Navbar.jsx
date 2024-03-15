@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/USAlogo1.png";
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
     setMenuOpen(false);
   };
 
-  const occasions = ['Birthday', 'Wedding', 'Anniversary', 'Graduation']; // Add more occasions as needed
+  const occasions = ["Birthday", "Wedding", "Anniversary", "Graduation"]; // Add more occasions as needed
 
   const handleOccasionSelect = (occasion) => {
     setSelectedOccasion(occasion);
@@ -38,7 +38,6 @@ const Navbar = () => {
             <br />
             CAKES
           </div>
-
           <div className="hidden md:flex space-x-2">
             <Link
               to="/Homepage"
@@ -69,16 +68,19 @@ const Navbar = () => {
                     key={occasion}
                     className="cursor-pointer py-2 px-4 hover:bg-red-900"
                     onClick={() => handleOccasionSelect(occasion)}
-                    
                   >
                     {occasion}
                   </li>
                 ))}
               </ul>
             )}
-          </div> {/* Closing div for hidden md:flex */}
+          </div>{" "}
+          {/* Closing div for hidden md:flex */}
           <div className="pt-5 md:hidden">
-            <button className="text-[#733D26] focus:outline-none" onClick={toggleMenu}>
+            <button
+              className="text-[#733D26] focus:outline-none"
+              onClick={toggleMenu}
+            >
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -86,19 +88,32 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
               </svg>
             </button>
           </div>
         </div>
-        
+
         {isMenuOpen && (
           <div className="md:hidden absolute top-16 right-2 rounded-md w-full bg-red-400 pl-10 py-5 shadow-lg z-50">
-            <Link to="/" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
+            <Link
+              to="/"
+              className="block text-white mb-2 hover:bg-red-200 rounded-md"
+              onClick={closeMenu}
+            >
               Home
             </Link>
 
-            <Link to="/Cakes" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
+            <Link
+              to="/Cakes"
+              className="block text-white mb-2 hover:bg-red-200 rounded-md"
+              onClick={closeMenu}
+            >
               Cakes
             </Link>
 
@@ -108,35 +123,25 @@ const Navbar = () => {
             >
               Occasions
             </div>
-            
-            {isMenuOpen && (
-              <ul className="md:hidden absolute left-[737px] top-[54px] bg-[#733D26] border border-[#381d12] rounded shadow-md ">
-                {occasions.map((occasion) => (
-                  <li
-                    key={occasion}
-                    className="cursor-pointer py-2 px-4 hover:bg-red-900"
-                    onClick={() => handleOccasionSelect(occasion)}
-                    
-                  >
-                    {occasion}
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            <Link to="/About" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
-              About
-            </Link>
-
-            <Link to="/" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
-              Cart
-            </Link>
-
-            <Link to="/" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
-              Login
-            </Link>
           </div>
         )}
+
+        {/* Render occasions inside the same container as the menu, relative to the link */}
+        <ul
+          className={`md:hidden absolute right-0 top-full bg-[#733D26] border border-[#381d12] rounded shadow-md ${
+            isMenuOpen ? "" : "hidden"
+          }`}
+        >
+          {occasions.map((occasion) => (
+            <li
+              key={occasion}
+              className="cursor-pointer py-2 px-4 hover:bg-red-900"
+              onClick={() => handleOccasionSelect(occasion)}
+            >
+              {occasion}
+            </li>
+          ))}
+        </ul>
 
         <div className="hidden md:flex items-center pt-2 ">
           <a className="mr-6 text-[#733D26] dark:text-neutral-200">
@@ -178,7 +183,9 @@ const Navbar = () => {
                 </g>{" "}
               </g>
             </svg>
-          <p className="text-[#733D26] text-base font-bold font-poppins">CART</p>
+            <p className="text-[#733D26] text-base font-bold font-poppins">
+              CART
+            </p>
           </a>
 
           <a className="mr-6 text-[#733D26] dark:text-neutral-200">
@@ -190,7 +197,6 @@ const Navbar = () => {
               preserveAspectRatio="xMidYMid meet"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
-              
             >
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g
@@ -220,9 +226,11 @@ const Navbar = () => {
                 ></rect>{" "}
               </g>
             </svg>
-            <p className="text-[#733D26] text-base font-bold font-poppins">LOGIN</p>
+            <p className="text-[#733D26] text-base font-bold font-poppins">
+              LOGIN
+            </p>
           </a>
-         </div>
+        </div>
       </nav>
     </>
   );

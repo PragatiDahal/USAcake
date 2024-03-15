@@ -10,12 +10,12 @@ const Search = () => {
   </div>
 
   <div className="w-200px md:w-[250px] h-[45px] px-4 py-4 md:pt-2 md:px-12 bg-[#F4BBC9] rounded-[30px] my-2 md:my-0">
-    <span className="text-base px-2">Delivery Location</span>
+    <span className="text-base px-2 justify-center">Delivery Location</span>
   </div>
 
   <div className="w-200px md:w-[250px] h-[45px] px-4 py-4 md:pt-2 md:px-12 bg-[#F4BBC9] rounded-[30px] my-2 md:my-0">
-    <span className="text-bold px-2">Call Us:</span>
-    <span className="text-base">01011456</span>
+    <span className="text-bold px-2 justify-center">Call Us:</span>
+    <span className="text-base justify-center">01011456</span>
   </div> 
 
 </section>
