@@ -110,7 +110,7 @@ const Navbar = () => {
             </div>
             
             {isMenuOpen && (
-              <ul className="md:hidden absolute left-[737px] top-[54px] bg-[#733D26] border border-[#381d12] rounded shadow-md ${isMenuOpen ? '' : 'hidden'}">
+              <ul className="md:hidden absolute left-[737px] top-[54px] bg-[#733D26] border border-[#381d12] rounded shadow-md ">
                 {occasions.map((occasion) => (
                   <li
                     key={occasion}

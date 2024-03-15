@@ -86,7 +86,7 @@ export default function App() {
                 USA CAKES
               </h6>
               <p>
-              From Our Oven to Your Heart: Irresistible Cakes Await
+              Sweeten your day with a slice of happiness from USA Cake!
               </p>
             </div>
             {/* <!-- Products section --> */}
