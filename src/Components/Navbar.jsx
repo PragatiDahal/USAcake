@@ -5,14 +5,22 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [selectedOccasion, setSelectedOccasion] = useState(null);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
-  }
+  };
 
   const closeMenu = () => {
     setMenuOpen(false);
-  }
+  };
+
+  const occasions = ['Birthday', 'Wedding', 'Anniversary', 'Graduation']; // Add more occasions as needed
+
+  const handleOccasionSelect = (occasion) => {
+    setSelectedOccasion(occasion);
+    setMenuOpen(false); // Close the menu after selecting an occasion
+  };
 
   return (
     <>
@@ -46,19 +54,31 @@ const Navbar = () => {
             >
               Cakes
             </Link>
-            <li
-              className="list-none w-[124px] h-[29px] left-[737px] top-[25px] absolute text-yellow-900 text-xl font-bold font-poppins"
-              onClick={closeMenu}
-            >
-              Occasions
-            </li>
-          </div>
 
-          <div className="pt-5 md:hidden">
-            <button
-              className="text-[#733D26] focus:outline-none"
+            <div
+              className="cursor-pointer w-[124px] h-[29px] left-[737px] top-[25px] absolute text-[#733D26] text-xl font-bold font-poppins"
               onClick={toggleMenu}
             >
+              Occasions
+            </div>
+
+            {isMenuOpen && (
+              <ul className="absolute left-[737px] top-[54px] bg-[#733D26] border border-[#381d12] rounded shadow-md">
+                {occasions.map((occasion) => (
+                  <li
+                    key={occasion}
+                    className="cursor-pointer py-2 px-4 hover:bg-red-900"
+                    onClick={() => handleOccasionSelect(occasion)}
+                    
+                  >
+                    {occasion}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div> {/* Closing div for hidden md:flex */}
+          <div className="pt-5 md:hidden">
+            <button className="text-[#733D26] focus:outline-none" onClick={toggleMenu}>
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -66,69 +86,59 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
               </svg>
             </button>
           </div>
+        </div>
+        
+        {isMenuOpen && (
+          <div className="md:hidden absolute top-16 right-2 rounded-md w-full bg-red-400 pl-10 py-5 shadow-lg z-50">
+            <Link to="/" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
+              Home
+            </Link>
 
-          {isMenuOpen && (
-            <div className="md:hidden absolute top-16 right-2 rounded-md w-full bg-red-400 pl-10 py-5 shadow-lg z-50">
-              <Link
-                to="/"
-                className="block text-white mb-2 hover:bg-red-200 rounded-md"
-                onClick={closeMenu}
-              >
-                Home
-              </Link>
+            <Link to="/Cakes" className="block text-white hover:bg-red-200 mb-2" onClick={closeMenu}>
+              Cakes
+            </Link>
 
-              <Link
-                to="/Cakes"
-                className="block text-white hover:bg-red-200 mb-2"
-                onClick={closeMenu}
-              >
-                Cakes
-              </Link>
-
-              <Link
-                to="/"
-                className="block text-white hover:bg-red-200 mb-2"
-                onClick={closeMenu}
-              >
-                Occasions
-              </Link>
-
-              <Link
-                to="/About"
-                className="block text-white hover:bg-red-200 mb-2"
-                onClick={closeMenu}
-              >
-                About
-              </Link>
-
-              <Link
-                to="/"
-                className="block text-white hover:bg-red-200 mb-2"
-                onClick={closeMenu}
-              >
-                Cart
-              </Link>
-
-              <Link
-                to="/"
-                className="block text-white hover:bg-red-200 mb-2"
-                onClick={closeMenu}
-              >
-                Login
-              </Link>
+            <div
+              className="cursor-pointer w-[124px] h-[29px] left-[737px] top-[25px] absolute text-[#733D26] text-xl font-bold font-poppins"
+              onClick={toggleMenu}
+            >
+              Occasions
             </div>
-          )}
+            
+            {isMenuOpen && (
+              <ul className="absolute left-[737px] top-[54px] bg-[#733D26] border border-[#381d12] rounded shadow-md">
+                {occasions.map((occasion) => (
+                  <li
+                    key={occasion}
+                    className="cursor-pointer py-2 px-4 hover:bg-red-900"
+                    onClick={() => handleOccasionSelect(occasion)}
+                    
+                  >
+                    {occasion}
+                  </li>
+                ))}
+              </ul>
+            )}
 
-<div className="hidden md:flex items-center pt-2 ">
+            <Link to="/About" className="block text-white hover:bg-red-200 mb-2" onClick={closeMenu}>
+              About
+            </Link>
+
+            <Link to="/" className="block text-white hover:bg-red-200 mb-2" onClick={closeMenu}>
+              Cart
+            </Link>
+
+            <Link to="/" className="block text-white hover:bg-red-200 mb-2" onClick={closeMenu}>
+              Login
+            </Link>
+          </div>
+        )}
+
+        <div className="hidden md:flex items-center pt-2 ">
           <a className="mr-6 text-[#733D26] dark:text-neutral-200">
             <svg
               height="30px"
@@ -213,7 +223,6 @@ const Navbar = () => {
             <p className="text-[#733D26] text-base font-bold font-poppins">LOGIN</p>
           </a>
          </div>
-        </div>
       </nav>
     </>
   );

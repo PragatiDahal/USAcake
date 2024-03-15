@@ -136,7 +136,7 @@ export default function App() {
               </p>
               <p>
                 <a href='/course' className="text-[#733D26] dark:text-[#733D26]"
-                >Occasions</a>
+                >Contact</a>
               </p>
             </div>
             {/* <!-- Contact section --> */}
