@@ -24,13 +24,12 @@ const Timeline = () => {
       <div
         data-aos="fade-up"
         data-aos-duration="2000"
-        className="justify-start md:justify-center w-[200px] h-[800px] md:w-[1440px] md:h-[837px] relative bg-white overflow-hidden"
+        className="justify-start md:justify-center w-full md:w-[80%] h-[100vh] md:h-[90vh] relative bg-white overflow-hidden"
       >
         <div className="w-[7px] h-[705px] left-[688px] top-[9px] absolute bg-red-200 bg-opacity-60" />
         <div className="w-[268px] h-2 left-[423px] top-[83px] absolute bg-red-200 bg-opacity-60" />
         <div className="w-[268px] h-2 left-[695px] top-[208px] absolute bg-red-200 bg-opacity-60" />
         <div className="w-[268px] h-2 left-[427px] top-[317px] absolute bg-red-200 bg-opacity-60" />
-        <div className="w-[268px] h-2 left-[423px] top-[638px] absolute bg-red-200 bg-opacity-60" />
         <div className="w-[268px] h-2 left-[691px] top-[505px] absolute bg-red-200 bg-opacity-60" />
         <img
           className="w-[126px] h-[126px] left-[297px] top-[28px] absolute rounded-full"
@@ -40,10 +39,7 @@ const Timeline = () => {
           className="w-[126px] h-[126px] left-[301px] top-[254px] absolute rounded-full"
           src={logo}
         />
-        <img
-          className="w-[126px] h-[126px] left-[297px] top-[575px] absolute rounded-full"
-          src={logo}
-        />
+        
         <img
           className="w-[126px] h-[126px] left-[929px] top-[148px] absolute rounded-full"
           src={logo}
@@ -61,11 +57,8 @@ const Timeline = () => {
         <div className="w-[73px] h-[34px] left-[494px] top-[274px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           2019
         </div>
-        <div className="w-[95px] h-[34px] left-[494px] top-[585px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
-          Today
-        </div>
         <div className="w-[73px] h-[34px] left-[750px] top-[439px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
-          2021
+          Today
         </div>
         <div className="w-[185px] h-[37px] left-[438px] top-[111px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           USA cake shop
@@ -75,9 +68,6 @@ const Timeline = () => {
         </div>
         <div className="w-[227px] h-[72px] left-[702px] top-[513px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           Best cake shop of Butwal.
-        </div>
-        <div className="w-[272px] h-36 left-[423px] top-[662px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
-          Most popular and renowned cake shop with best customer services.
         </div>
         <div className="w-[185px] h-[37px] left-[452px] top-[350px] absolute text-yellow-900 text-2xl font-semibold font-['Poppins']">
           3rd location
