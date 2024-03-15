@@ -14,7 +14,7 @@ const Review = () => {
   data-aos-duration="2000"
   className="flex flex-col md:flex-row w-full md:max-w-[1200px]  bg-[#F4BBC9] rounded-3xl mx-auto mt-12 mb-10 justify-center items-center"
 >
-  <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4">
+  <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4 md:p-2">
     <svg
       height="50px"
       width="50px"
@@ -29,7 +29,7 @@ const Review = () => {
     </p>
   </div>
 
-  <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4">
+  <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4 md:p-2">
           <svg
             fill="#733D26"
             height="50px"
@@ -62,7 +62,7 @@ const Review = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4">
+        <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4 md:p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             enable-background="new 0 0 122.88 102.36"
@@ -83,7 +83,7 @@ const Review = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4">
+        <div className="flex flex-wrap justify-center items-center w-full md:w-1/4 p-4 md:p-2">
           <svg
             version="1.0"
             height="50px"
@@ -123,8 +123,7 @@ const Review = () => {
             Serviced Till Date
           </p>
         </div>
-
-</div>
+        </div>
 
     </>
   );
