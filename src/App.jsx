@@ -15,6 +15,7 @@ import Birthday from './Components/Birthday'
 import Wedding from './Components/Wedding'
 import Graduation from './Components/Graduation'
 import Theme from './Components/Theme'
+import Login from './Components/Login'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
     <Route path="/Wedding" element={<Wedding/>} />
     <Route path="/Graduation" element={<Graduation/>} />
     <Route path="/Theme" element={<Theme/>} />
+    <Route path="/Login" element={<Login/>} />
     <Route path="*" element={<Navigate to='/'/>} />
   </Routes>
   <Footer/>
