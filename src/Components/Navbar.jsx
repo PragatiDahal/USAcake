@@ -137,7 +137,7 @@ const Navbar = () => {
               Cart
             </Link>
 
-            <Link to="/" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
+            <Link to="/Login" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
               Login
             </Link>
           </div>
