@@ -3,6 +3,7 @@ import logo from "../images/USAlogo1.png";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [selectedOccasion, setSelectedOccasion] = useState(null);
@@ -15,7 +16,11 @@ const Navbar = () => {
     setMenuOpen(false);
   };
 
-  const occasions = ['Birthday', 'Wedding', 'Anniversary', 'Graduation']; // Add more occasions as needed
+  const occasions = [
+    <Link to="/Birthday">Birthday</Link>, 
+    <Link to="/Wedding">Wedding</Link>, 
+    <Link to="/Graduation">Graduation</Link>, 
+    <Link to="/Theme">Theme</Link>, ]
 
   const handleOccasionSelect = (occasion) => {
     setSelectedOccasion(occasion);

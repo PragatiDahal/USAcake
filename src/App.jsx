@@ -11,6 +11,10 @@ import Footer from "./Components/Footer"
 import Cakes from './Components/Cakes'
 import About from './Components/About'
 import Homepage from './Components/Homepage'
+import Birthday from './Components/Birthday'
+import Wedding from './Components/Wedding'
+import Graduation from './Components/Graduation'
+import Theme from './Components/Theme'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 function App() {
   return (
@@ -28,6 +32,10 @@ function App() {
      <Route path="/Timeline" element={<Timeline/>}/>
     <Route path="/Cakes" element={<Cakes />} />
     <Route path="/About" element={<About />} /> 
+    <Route path="/Birthday" element={<Birthday/>} />
+    <Route path="/Wedding" element={<Wedding/>} />
+    <Route path="/Graduation" element={<Graduation/>} />
+    <Route path="/Theme" element={<Theme/>} />
     <Route path="*" element={<Navigate to='/'/>} />
   </Routes>
   <Footer/>
