@@ -20,8 +20,10 @@ const Trendingcake = () => {
     <div className="absolute top-0 left-0 bg-[#733D26] text-white py-1 px-5 md:px-2 rounded-tr-md rounded-bl-md">
       <p className="text-base font-bold">15% OFF</p>
     </div>
+    <Link to="/Chocolate">
     <img className="w-full h-full rounded-2xl" src="https://i.pinimg.com/564x/52/48/14/524814bcafad7dfa9c6b7ffcda4c7d0e.jpg" alt="" />
     <p className="mt-2 px-2 text-center text-[#733D26] font-bold bg-white rounded-xl">Butterscotch cake : Rs.500</p>
+    </Link>
   </div>
 
   <div className="relative" data-aos="fade-up" data-aos-duration="2000">

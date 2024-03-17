@@ -16,6 +16,8 @@ import Wedding from './Components/Wedding'
 import Graduation from './Components/Graduation'
 import Theme from './Components/Theme'
 import Login from './Components/Login'
+import AddCart from './Components/AddCart'
+import Chocolate from './Components/Cakes/Chocolate'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
     <Route path="/Graduation" element={<Graduation/>} />
     <Route path="/Theme" element={<Theme/>} />
     <Route path="/Login" element={<Login/>} />
+    <Route path="/AddCart" element={<AddCart/>} />
+    <Route path="/Chocolate" element={<Chocolate/>} />
     <Route path="*" element={<Navigate to='/'/>} />
   </Routes>
   <Footer/>
