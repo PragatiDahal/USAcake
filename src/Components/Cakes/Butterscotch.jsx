@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react'
+import { useState } from 'react';
 
-const Chocolate = ({ onAddToCart }) => {
-  const [deliveryLocation, setDeliveryLocation] = useState('');
+const Butterscotch = ({ onAddToCart }) => {
+    const [deliveryLocation, setDeliveryLocation] = useState('');
   const [specialMessage, setSpecialMessage] = useState('');
 
   const handleSubmit = (e) => {
@@ -12,10 +13,10 @@ const Chocolate = ({ onAddToCart }) => {
 
   return (
     <div className="flex flex-col flex-wrap max-w-lg mx-auto p-8  bg-white rounded-lg shadow-lg">
-      <h2 className="text-3xl font-semibold text-center text-gray-800 mb-4">Chocolate Cake</h2>
+      <h2 className="text-3xl font-semibold text-center text-gray-800 mb-4">Butterscotch Cake</h2>
       <img
         className="w-full h-auto md:w-[450px] md:h-[450px] rounded-md mb-4"
-        src="https://i.pinimg.com/564x/f1/bb/77/f1bb77eaff06699ca2405dbf352682ea.jpg"
+        src="https://i.pinimg.com/564x/52/48/14/524814bcafad7dfa9c6b7ffcda4c7d0e.jpg"
         alt="Chocolate Cake"
       />
       <p className="text-gray-700 text-lg mb-4">
@@ -48,7 +49,8 @@ const Chocolate = ({ onAddToCart }) => {
         <button type="submit" className="bg-[#F4BBC9] text-white py-2 px-4 rounded-md hover:bg-red-500">Add to Cart</button>
       </form>
     </div>
-  );
-};
+   
+  )
+}
 
-export default Chocolate;
+export default Butterscotch

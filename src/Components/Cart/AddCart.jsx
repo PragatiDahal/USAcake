@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
-import CakeItem from './CakeItem'
-import ShoppingCart from './ShoppingCart'
+import CakeItem from '././CakeItem'
+import ShoppingCart from '././ShoppingCart'
 
 const AddCart = () => {
     const [cart, setCart] = useState([]);
