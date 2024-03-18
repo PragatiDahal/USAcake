@@ -31,7 +31,8 @@ import Strawberry from "./Components/Cakes/Strawberry";
 import Makeuptheme from "./Components/Cakes/Makeuptheme";
 import Oreocheese from "./Components/Cakes/Oreocheese";
 import Mini from "./Components/Cakes/Mini";
-
+import Blueberry from "./Components/Cakes/Blueberry";
+import Kitkat from "./Components/Cakes/Kitkat";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 function App() {
   return (
@@ -69,6 +70,8 @@ function App() {
           <Route path="/Strawberry" element={<Strawberry />} />
           <Route path="/Oreocheese" element={<Oreocheese/>} />
           <Route path="/Mini" element={<Mini />} />
+          <Route path="/Blueberry" element={<Blueberry />} />
+          <Route path="/Kitkat" element={<Kitkat />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
