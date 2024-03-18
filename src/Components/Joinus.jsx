@@ -23,9 +23,9 @@ const Joinus = () => {
  
  <div className="flex justify-center items-center  pt-5 mx-auto h-[150px]" data-aos="fade-up" data-aos-duration="2000">
     <div className="flex items-center w-[450px] h-[45px] bg-white border-2 border-[#733D26] rounded-xl mx-5">
-        <span className="text-base px-2 text-[#733D26]"> Enter your email here </span>
+        <input type="text" className="text-base px-2 text-[#733D26]" placeholder='Enter your email here'/> 
     </div>
-    <button className="bg-[#733D26] hover:bg-red-800 w-[150px] h-[45px] rounded-xl text-white text-base font-bold font-poppins">
+    <button className="bg-[#733D26] hover:bg-red-800 w-[150px] h-[45px] rounded-xl text-white text-base font-bold font-poppins py-2">
     Join US
     </button>
  </div>
