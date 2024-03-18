@@ -25,6 +25,12 @@ import Pineapple from "./Components/Cakes/Pineapple";
 import Heartshape from "./Components/Cakes/Heartshape";
 import Blackforest from "./Components/Cakes/Blackforest";
 import Whiteforest from "./Components/Cakes/Whiteforest";
+import ChocoTruffle from "./Components/Cakes/ChocoTruffle";
+import Almond from "./Components/Cakes/Almond";
+import Strawberry from "./Components/Cakes/Strawberry";
+import Makeuptheme from "./Components/Cakes/Makeuptheme";
+import Oreocheese from "./Components/Cakes/Oreocheese";
+import Mini from "./Components/Cakes/Mini";
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 function App() {
@@ -57,6 +63,12 @@ function App() {
           <Route path="/Heartshape" element={<Heartshape />} />
           <Route path="/Fruittoppings" element={<Fruittoppings />} />
           <Route path="/Pineapple" element={<Pineapple />} />
+          <Route path="/ChocoTruffle" element={<ChocoTruffle />} />
+          <Route path="/Almond" element={<Almond />} />
+          <Route path="/Makeuptheme" element={<Makeuptheme />} />
+          <Route path="/Strawberry" element={<Strawberry />} />
+          <Route path="/Oreocheese" element={<Oreocheese/>} />
+          <Route path="/Mini" element={<Mini />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
