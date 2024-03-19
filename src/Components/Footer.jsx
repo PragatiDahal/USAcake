@@ -126,13 +126,14 @@ export default function App() {
                 >Home</a>
               </p>
               <p className="mb-4">
-                <a href='/About' className="text-[#733D26] dark:text-[#733D26]"
+                <Link to='/About' className="text-[#733D26] dark:text-[#733D26]"
                 >About
-                </a>
+                </Link>
               </p>
               <p className="mb-4">
-                <a href="/Cakes" className="text-[#733D26] dark:text-[#733D26]"
-                >Cake</a>
+                <Link to="/Cakes" className="text-[#733D26] dark:text-[#733D26]"
+                >Cake
+                </Link>
               </p>
               <p>
                 <a href='/course' className="text-[#733D26] dark:text-[#733D26]"
