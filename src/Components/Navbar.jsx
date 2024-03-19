@@ -80,8 +80,9 @@ const Navbar = () => {
                 ))}
               </ul>
             )}
-          </div>{" "}
+          </div>
           {/* Closing div for hidden md:flex */}
+          
           {/* for mobile view */}
           <div className="pt-5 md:hidden">
             <button

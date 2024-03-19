@@ -131,8 +131,8 @@ export default function App() {
                 </Link>
               </p>
               <p className="mb-4">
-                <a href='service' className="text-[#733D26] dark:text-[#733D26]"
-                >Cake</a>
+                <Link to="/Cakes" className="text-[#733D26] dark:text-[#733D26]"
+                >Cake</Link>
               </p>
               <p>
                 <a href='/course' className="text-[#733D26] dark:text-[#733D26]"
