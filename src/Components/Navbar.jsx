@@ -173,7 +173,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center pt-2 ">
           <a className="mr-6 text-[#733D26] dark:text-neutral-200">
-            <a href="/AddCart">
+            <Link to="/AddCart">
               <svg
                 height="30px"
                 width="30px"
@@ -215,11 +215,11 @@ const Navbar = () => {
               <p className="text-[#733D26] text-base font-bold font-poppins">
                 CART
               </p>
-            </a>
+            </Link>
           </a>
 
           <a className="mr-6 text-[#733D26] dark:text-neutral-200">
-            <a href="/Login">
+            <Link to="/Login">
               <svg
                 className="w-[30px] h-[30px] top-[5px]"
                 fill="#733D26"
@@ -260,7 +260,7 @@ const Navbar = () => {
               <p className="text-[#733D26] text-base font-bold font-poppins">
                 LOGIN
               </p>
-            </a>
+            </Link>
           </a>
         </div>
       </nav>
