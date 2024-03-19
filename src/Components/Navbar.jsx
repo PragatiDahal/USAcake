@@ -44,6 +44,7 @@ const Navbar = () => {
             CAKES
           </div>
 
+           {/* for desktp view */}
           <div className="hidden md:flex space-x-2">
             <Link
               to="/Homepage"
@@ -82,6 +83,8 @@ const Navbar = () => {
               </ul>
             )}
           </div> {/* Closing div for hidden md:flex */}
+
+            {/* for mobile view */}
           <div className="pt-5 md:hidden">
             <button className="text-[#733D26] focus:outline-none" onClick={toggleMenu}>
               <svg
@@ -112,7 +115,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Occasions
-            </div>
+            
             
             {isMenuOpen && (
               <ul className="md:hidden absolute left-[737px] top-[54px] bg-[#733D26] border border-[#381d12] rounded shadow-md ">
@@ -128,6 +131,7 @@ const Navbar = () => {
                 ))}
               </ul>
             )}
+            </div>
 
             <Link to="/About" className="block text-white mb-2 hover:bg-red-200 rounded-md" onClick={closeMenu}>
               About
