@@ -72,7 +72,7 @@ const Navbar = () => {
                 {occasions.map((occasion) => (
                   <li
                     key={occasion}
-                    className="cursor-pointer py-2 px-4 hover:bg-red-900"
+                    className="cursor-pointer relative  py-2 px-4 bg-[#733D26]  hover:bg-red-900"
                     onClick={() => handleOccasionSelect(occasion)}
                   >
                     {occasion}
@@ -133,7 +133,7 @@ const Navbar = () => {
             </div>
 
             {/* Render occasions dropdown unconditionally */}
-            <ul className="md:hidden absolute left-[737px] top-[54px] bg-[#733D26] border border-[#381d12] rounded shadow-md ">
+            <ul className="md:hidden absolute left-[125px] top-[85px] bg-[#733D26] border border-[#381d12] rounded shadow-md ">
               {occasions.map((occasion) => (
                 <li
                   key={occasion}

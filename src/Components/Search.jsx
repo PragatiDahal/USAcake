@@ -5,9 +5,9 @@ const Search = () => {
     <>
    <section className="flex flex-col md:flex-row flex-wrap pt-5 gap-8 justify-center items-center">
   
-  <div className="flex items-center w-200px md:w-[450px] h-[45px] md:top-[45px] md:left-[205px] bg-white border-2 border-red-200 rounded-xl mx-5 ">
-    <input type="text" className="text-base px-2 " placeholder='Search for cakes?'/>
-  </div>
+  <input type="text" className="flex items-center w-200px md:w-[450px] h-[45px] md:top-[45px] md:left-[205px] bg-white border-2 border-red-200 rounded-xl mx-5 px-4" placeholder="Search for Cakes?">
+   
+  </input>
 
   <div className="w-200px md:w-[250px] h-[45px] px-4 py-4 md:pt-2 md:px-12 bg-[#F4BBC9] rounded-[30px] my-2 md:my-0">
     <span className="text-base px-2 justify-center">Delivery Location</span>
